@@ -1,0 +1,40 @@
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (https://golang.org/doc/faq#dont_depend)
+vendor/
+# These are the same as vendor/
+# vendor/
+# _vendor/
+# or any directory named vendor
+
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+
+# Log files and crash dumps
+*.log
+*.log.*
+crash.log
+
+# Temporary files
+.tmp/
+
+# Auto-generated files
+Makefile
+
+# Optional: IDE-specific files (if you're using a specific IDE)
+.idea/
+.vscode/
+
+# Optional: Config files (if your project uses them)
+config.yaml
