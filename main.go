@@ -4,7 +4,10 @@ import (
 	"BOOK-API/routes"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
+	"log"
 	"net/http"
+	"os"
 )
 
 func CatchAllErrorLogger(c *gin.Context) {
@@ -16,6 +19,16 @@ func CatchAllErrorLogger(c *gin.Context) {
 		}
 	}()
 	c.Next()
+}
+
+func init() {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
+
+	dbUrl := os.Getenv("DB_CONNECTION_URL")
+	fmt.Println("Test:::", dbUrl)
 }
 
 func main() {

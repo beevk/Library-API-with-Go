@@ -38,3 +38,6 @@ Makefile
 
 # Optional: Config files (if your project uses them)
 config.yaml
+
+# Environment variables
+.env

@@ -5,7 +5,8 @@ Just a basic REST API using Gin and GORM
 ## Run App Locally
 You'll need to have go installed in your system to run the app with this method.
 1. `cd` to the app directory
-2. Run following command on your terminal 
+2. Don't forget to add your environment variables (copy .env.sample to .env file and modify)
+3. Run following command on your terminal 
 ```bash
 go run main.go
 ```
