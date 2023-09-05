@@ -27,7 +27,7 @@ vendor/
 crash.log
 
 # Temporary files
-.tmp/
+tmp/
 
 # Auto-generated files
 Makefile
